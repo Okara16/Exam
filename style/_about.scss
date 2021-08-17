@@ -1,0 +1,146 @@
+.about {
+    &__logo img {
+        margin: 0 auto;
+        display: block;
+        padding-top: 100px;
+    }
+}
+
+.tab {
+    padding-top: 100px;
+}
+
+.tabs {
+    max-width: 970px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-right: 130px;
+    border-bottom: 2px solid #778055;
+}
+
+.tabs button {
+    font-size: 30px;
+    display: block;
+    background: #f7f8f3;
+    padding-bottom: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.tabs button:focus {
+    border-bottom: 2px solid #1c1c1b;
+}
+
+.tabcontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: none;
+    margin-top: 80px;
+    &__text {
+        width: 400px;
+        font-size: 18px;
+        color: #778055;
+        line-height: 50px;
+        margin-top: 20px;
+        margin-left: 120px;
+    }
+    &__text--margin {
+        margin-top: 20px;
+    }
+    &__title {
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        line-height: 2;
+        text-align: left;
+    }
+    &__images {
+        width: 570px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    &__images img {
+        display: block;
+        width: 570px;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .tab {
+        margin: 0 auto;
+        padding: 15px;
+    }
+    .tabs {
+        padding-right: 0;
+    }
+    .tabs button {
+        font-size: 20px;
+    }
+    .tabcontent {
+        &__text {
+            line-height: 40px;
+        }
+        &__images {
+            right: 0;
+        }
+        &__images img {
+            width: 350px;
+            height: 200px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .tabs {
+        width: 100%;
+        padding-top: 50px;
+    }
+    .tabs button {
+        font-size: 14px;
+    }
+    .tabcontent {
+        width: 100%;
+        &__images img {
+            width: 300px;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        &__logo img {
+            width: 100%;
+        }
+    }
+    .tabs {
+        padding-top: 50px;
+    }
+    .tabcontent {
+        flex-direction: column;
+        margin-top: 20px;
+        &__text {
+            width: 100%;
+            margin-left: 0;
+        }
+        &__images {
+            width: 50%;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        &__images img {
+            margin-right: 20px;
+        }
+        &__img-2 {
+            display: none;
+        }
+    }
+}

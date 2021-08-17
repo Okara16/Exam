@@ -1,0 +1,109 @@
+.footer {
+    color: #778055;
+    text-transform: uppercase;
+    padding-top: 170px;
+    padding-bottom: 55px;
+    padding-left: 5px;
+    padding-right: 5px;
+    letter-spacing: 3px;
+    &__container {
+        max-width: 1170px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    &__info {
+        width: 370px;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 2.5;
+        border-top: 2px solid #778055;
+        padding-top: 70px;
+    }
+    &__social {
+        text-align: center;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: -45px;
+    }
+    &__title {
+        font-size: 60px;
+    }
+    &__icons {
+        width: 180px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link {
+        color: #778055;
+        transition: all 0.4s;
+    }
+    &__link:hover {
+        color: #343d15;
+        transform: scale(2);
+    }
+    &__line {
+        width: 2px;
+        height: 55px;
+        background: #778055;
+        margin: 0 auto;
+    }
+    &__copyright {
+        font-size: 12px;
+        text-align: center;
+        margin-top: 60px;
+    }
+}
+
+.form {
+    margin-top: 25px;
+    text-align: center;
+    &__title {
+        font-size: 18px;
+        color: black;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    &__input {
+        padding-left: 30px;
+        border: 2px solid #ced6af;
+    }
+    &__input:focus {
+        outline: none;
+    }
+    &__input::placeholder {
+        color: #808861;
+        letter-spacing: 1px;
+    }
+    &__btn {
+        padding: 22px 30px;
+        background: url(../images/arrow-3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 2px solid #ced6af;
+        border-left: none;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.1s;
+    }
+    &__btn:hover {
+        background-size: 50%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer {
+        &__info {
+            width: 100px;
+        }
+        &__icons {
+            width: 80px;
+        }
+    }
+}

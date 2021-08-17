@@ -1,0 +1,159 @@
+.feature_products {
+    padding: 140px 0 150px;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 75px;
+}
+
+.card {
+    width: 31.7%;
+    height: 430px;
+    font-size: 18px;
+    text-align: center;
+    &__product {
+        height: 430px;
+        border: 1px solid #ced6af;
+        padding-top: 35px;
+    }
+    &__description {
+        text-transform: uppercase;
+        margin-top: 15px;
+    }
+    &__img {
+        margin: 60px auto 0;
+    }
+    &__price {
+        display: flex;
+        justify-content: space-between;
+        height: 75px;
+        background: #f1f1f1;
+        border: 1px solid #e1e1e1;
+        border-top: none;
+        border-right: none;
+    }
+    &__btn {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #fff;
+        background: #6e774a;
+        padding: 0 40px 0 40px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+    &__btn:hover {
+        background: #56680d;
+    }
+    &__cost {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+}
+
+.fa-star {
+    color: #6e774a;
+}
+
+.slider {
+    position: relative;
+}
+
+.slick-slide {
+    padding: 0 15px;
+}
+
+.prev,
+.next {
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 45%;
+    bottom: -70px;
+}
+
+.next {
+    left: 55%;
+    bottom: -71px;
+}
+
+.accordion {
+    max-width: 580px;
+    margin: 135px auto 0;
+    &__title {
+        padding-bottom: 45px;
+        margin-left: -120px;
+        letter-spacing: 3px;
+    }
+}
+
+.accordion-item {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #56680d;
+    position: relative;
+    &__title {
+        min-height: 100px;
+        letter-spacing: 3px;
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        cursor: pointer;
+    }
+    &__title::before,
+    &__title::after {
+        content: "";
+        background: #56680d;
+        position: absolute;
+        cursor: pointer;
+    }
+    &__title::before {
+        width: 1px;
+        height: 20px;
+        top: 41px;
+        left: 0;
+    }
+    &__title::after {
+        width: 20px;
+        height: 1px;
+        left: -10px;
+        top: 50px;
+    }
+    &__content {
+        color: #000;
+        letter-spacing: 0.5px;
+        line-height: 3;
+        display: none;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        width: 100%;
+    }
+    .accordion {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .accordion {
+        &__title {
+            margin: 0 auto;
+            font-size: 22px;
+        }
+    }
+    .slick-slide {
+        padding: 0;
+    }
+}

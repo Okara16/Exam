@@ -1,0 +1,112 @@
+.intro {
+    padding-bottom: 60px;
+}
+
+.description {
+    text-align: right;
+    margin-top: 300px;
+    margin-right: 250px;
+    &__title {
+        font-size: 55px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-top: 30px;
+        letter-spacing: 10px;
+    }
+    &__text {
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: 5px;
+    }
+    &__btn {
+        width: 270px;
+        height: 68px;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        line-height: 1.5;
+        margin-top: 55px;
+        background: transparent;
+        color: #fff;
+        border: 1px solid #9db892;
+        cursor: pointer;
+        position: relative;
+        transition: 0.4s;
+    }
+    &__btn:hover {
+        background: #77926b;
+        border-radius: 5px;
+    }
+    &__btn--line {
+        display: inline-block;
+        width: 45px;
+        height: 2px;
+        background: #fff;
+        margin-bottom: 5px;
+        margin-left: 10px;
+    }
+    &__link {
+        font-size: 18px;
+        font-weight: 300;
+        display: block;
+        margin-top: 25px;
+        margin-right: 20px;
+        margin-left: 75px;
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: 5px;
+        transition: all 0.4s;
+    }
+    &__link:hover {
+        color: rgb(185, 192, 192);
+    }
+}
+
+.turn-text {
+    font-size: 26px;
+    letter-spacing: 2px;
+    width: 300px;
+    margin-left: 52px;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    position: relative;
+    bottom: 0;
+    top: 200px;
+    text-transform: uppercase;
+    &__line {
+        width: 100px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        bottom: 17px;
+        left: -130px;
+    }
+}
+
+.arrow-2 img {
+    margin: 215px auto 0;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.arrow-2 img:hover {
+    border-radius: 50%;
+}
+
+@media screen and(max-width: 768px) {
+    .description {
+        text-align: center;
+        margin: 150px auto;
+        &__title {
+            font-size: 26px;
+        }
+        &__link {
+            font-size: 16px;
+            margin-left: 0;
+        }
+    }
+    .turn-text {
+        display: none;
+    }
+}
