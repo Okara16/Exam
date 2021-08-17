@@ -620,14 +620,13 @@ hr {
     margin-left: 0;
   }
   .tabcontent__images {
-    width: 50%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    width: 100%;
     margin-top: 30px;
   }
   .tabcontent__images img {
     margin-right: 20px;
+    width: 100%;
+    height: auto;
   }
   .tabcontent__img-2 {
     display: none;
