@@ -125,6 +125,7 @@ $(window).on('click', function(event) {
 
 $('.slider-testimonials').slick({
     dots: false,
+    arrows: true,
     infinite: true,
     speed: 500,
     fade: true,
