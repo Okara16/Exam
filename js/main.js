@@ -94,6 +94,24 @@ $('.accordion-item__title').on('click', function(e) {
             .slideUp(300)
     }
 })
+$('.accordion-item__title').on('click', function(e) {
+    $(this)
+        .parent('.accordion-item')
+        .siblings('.accordion-item')
+        .children('.accordion-item__content')
+
+        .slideUp(300)
+
+    const contentElement = $(this).siblings('.accordion-item__content')
+
+    if (contentElement.css('display') === 'none') {
+        contentElement
+            .slideDown(300)
+    } else {
+        contentElement
+            .slideUp(300)
+    }
+})
 
 $(window).on('click', function(event) {
     if ($(event.target).closest('.accordion-item').length === 0) {
@@ -107,11 +125,16 @@ $(window).on('click', function(event) {
 
 $('.slider-testimonials').slick({
     dots: false,
+    arrows: true,
     infinite: true,
     speed: 500,
     fade: true,
     autoplay: true,
     autoplaySpeed: 3500,
+    prevArrow: "<img src='images/left-2.png' class='prev-2' alt='1'>",
+    nextArrow: "<img src='images/right-2.png' class='next-2' alt='2'>",
+    prevArrow: "<img src='images/left-2.png' class='prev-2' alt='1'>",
+    nextArrow: "<img src='images/right-2.png' class='next-2' alt='2'>",
     prevArrow: "<img src='images/left-2.png' class='prev-2' alt='1'>",
     nextArrow: "<img src='images/right-2.png' class='next-2' alt='2'>",
     cssEase: 'linear'
