@@ -131,7 +131,7 @@ $('.slider-testimonials').slick({
     fade: true,
     autoplay: true,
     autoplaySpeed: 3500,
-    prevArrow: "<img src='images/left-2.png' class='prev-2' alt='1'>",
+    prevArrow: "<img src='images/left-2.png' class='prev-3' alt='1'>",
     nextArrow: "<img src='images/right-2.png' class='next-2' alt='2'>",
     prevArrow: "<img src='images/left-2.png' class='prev-2' alt='1'>",
     nextArrow: "<img src='images/right-2.png' class='next-2' alt='2'>",
